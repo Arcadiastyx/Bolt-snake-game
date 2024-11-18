@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="start-screen" class="screen">
+        <h1>Snake Game</h1>
+        <button id="start-button">Jouer</button>
+      </div>
+      <div id="game-screen" class="screen hidden">
+        <canvas id="game-canvas"></canvas>
+        <div class="controls">
+          <button id="pause-button">Pause</button>
+          <button id="quit-button">Quitter</button>
+        </div>
+      </div>
+      <div id="game-over-screen" class="screen hidden">
+        <h2>Game Over</h2>
+        <p>Score: <span id="final-score">0</span></p>
+        <button id="replay-button">Rejouer</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
